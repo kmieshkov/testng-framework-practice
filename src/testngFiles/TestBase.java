@@ -14,12 +14,12 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Properties;
 
-public class Annot2 {
+public class TestBase {
 
 	public WebDriver driver = null;
 
 	@Test
-	public void Login() throws IOException {
+	public void login() throws IOException {
 		Properties prop = new Properties();
 		FileInputStream fileInputStream = null;
 		fileInputStream = new FileInputStream("/Users/kmieshkov/Projects/IdeaProjects/testng-framework-practice/src/testngFiles/datadriven.properties");

@@ -2,13 +2,15 @@ package testngFiles;
 
 import org.testng.annotations.Test;
 
-public class DependenyAnnot {
+import java.io.IOException;
+
+public class DependenyAnnot extends TestBase {
 
 	@Test
-	public void OpeningBrowser() {
+	public void OpeningBrowser() throws IOException {
 		//This opens the Browser
+		login();
 		System.out.println("Executing opening Browser");
-
 	}
 
 	@Test(dependsOnMethods = {"OpeningBrowser"}, alwaysRun = true)
